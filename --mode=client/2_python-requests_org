@@ -1,0 +1,931 @@
+¶Release v2.23.0. (Installation)InstallationRequests is an elegant and simple HTTP library for Python, built for human beings.Behold, the power of Requests:See similar code, sans Requests.similar code, sans RequestsRequests allows you to send HTTP/1.1 requests extremely easily.
+There’s no need to manually add query strings to your
+URLs, or to form-encode your POST data. Keep-alive and HTTP connection pooling
+are 100% automatic, thanks to urllib3.urllib3¶Requests is ready for today’s web.
+Keep-Alive & Connection Pooling
+International Domains and URLs
+Sessions with Cookie Persistence
+Browser-style SSL Verification
+Automatic Content Decoding
+Basic/Digest Authentication
+Elegant Key/Value Cookies
+Automatic Decompression
+Unicode Response Bodies
+HTTP(S) Proxy Support
+Multipart File Uploads
+Streaming Downloads
+Connection Timeouts
+Chunked Requests
+.netrc Support
+Keep-Alive & Connection PoolingInternational Domains and URLsSessions with Cookie PersistenceBrowser-style SSL VerificationAutomatic Content DecodingBasic/Digest AuthenticationElegant Key/Value CookiesAutomatic DecompressionUnicode Response BodiesHTTP(S) Proxy SupportMultipart File UploadsStreaming DownloadsConnection TimeoutsChunked Requests.netrc SupportRequests officially supports Python 2.7 & 3.4–3.7, and runs great on PyPy.¶This part of the documentation, which is mostly prose, begins with some
+background information about Requests, then focuses on step-by-step
+instructions for getting the most out of Requests.
+Introduction
+Philosophy
+Apache2 License
+Requests License
+
+
+Installation of Requests
+$ pipenv install requests
+Get the Source Code
+
+
+Quickstart
+Make a Request
+Passing Parameters In URLs
+Response Content
+Binary Response Content
+JSON Response Content
+Raw Response Content
+Custom Headers
+More complicated POST requests
+POST a Multipart-Encoded File
+Response Status Codes
+Response Headers
+Cookies
+Redirection and History
+Timeouts
+Errors and Exceptions
+
+
+Advanced Usage
+Session Objects
+Request and Response Objects
+Prepared Requests
+SSL Cert Verification
+Client Side Certificates
+CA Certificates
+Body Content Workflow
+Keep-Alive
+Streaming Uploads
+Chunk-Encoded Requests
+POST Multiple Multipart-Encoded Files
+Event Hooks
+Custom Authentication
+Streaming Requests
+Proxies
+Compliance
+HTTP Verbs
+Custom Verbs
+Link Headers
+Transport Adapters
+Blocking Or Non-Blocking?
+Header Ordering
+Timeouts
+
+
+Authentication
+Basic Authentication
+Digest Authentication
+OAuth 1 Authentication
+OAuth 2 and OpenID Connect Authentication
+Other Authentication
+New Forms of Authentication
+
+
+Introduction
+Philosophy
+Apache2 License
+Requests License
+
+Introduction
+Philosophy
+Apache2 License
+Requests License
+PhilosophyPhilosophyApache2 LicenseApache2 LicenseRequests LicenseRequests LicenseInstallation of Requests
+$ pipenv install requests
+Get the Source Code
+
+Installation of Requests
+$ pipenv install requests
+Get the Source Code
+$ pipenv install requests$ pipenv install requestsGet the Source CodeGet the Source CodeQuickstart
+Make a Request
+Passing Parameters In URLs
+Response Content
+Binary Response Content
+JSON Response Content
+Raw Response Content
+Custom Headers
+More complicated POST requests
+POST a Multipart-Encoded File
+Response Status Codes
+Response Headers
+Cookies
+Redirection and History
+Timeouts
+Errors and Exceptions
+
+Quickstart
+Make a Request
+Passing Parameters In URLs
+Response Content
+Binary Response Content
+JSON Response Content
+Raw Response Content
+Custom Headers
+More complicated POST requests
+POST a Multipart-Encoded File
+Response Status Codes
+Response Headers
+Cookies
+Redirection and History
+Timeouts
+Errors and Exceptions
+Make a RequestMake a RequestPassing Parameters In URLsPassing Parameters In URLsResponse ContentResponse ContentBinary Response ContentBinary Response ContentJSON Response ContentJSON Response ContentRaw Response ContentRaw Response ContentCustom HeadersCustom HeadersMore complicated POST requestsMore complicated POST requestsPOST a Multipart-Encoded FilePOST a Multipart-Encoded FileResponse Status CodesResponse Status CodesResponse HeadersResponse HeadersCookiesCookiesRedirection and HistoryRedirection and HistoryTimeoutsTimeoutsErrors and ExceptionsErrors and ExceptionsAdvanced Usage
+Session Objects
+Request and Response Objects
+Prepared Requests
+SSL Cert Verification
+Client Side Certificates
+CA Certificates
+Body Content Workflow
+Keep-Alive
+Streaming Uploads
+Chunk-Encoded Requests
+POST Multiple Multipart-Encoded Files
+Event Hooks
+Custom Authentication
+Streaming Requests
+Proxies
+Compliance
+HTTP Verbs
+Custom Verbs
+Link Headers
+Transport Adapters
+Blocking Or Non-Blocking?
+Header Ordering
+Timeouts
+
+Advanced Usage
+Session Objects
+Request and Response Objects
+Prepared Requests
+SSL Cert Verification
+Client Side Certificates
+CA Certificates
+Body Content Workflow
+Keep-Alive
+Streaming Uploads
+Chunk-Encoded Requests
+POST Multiple Multipart-Encoded Files
+Event Hooks
+Custom Authentication
+Streaming Requests
+Proxies
+Compliance
+HTTP Verbs
+Custom Verbs
+Link Headers
+Transport Adapters
+Blocking Or Non-Blocking?
+Header Ordering
+Timeouts
+Session ObjectsSession ObjectsRequest and Response ObjectsRequest and Response ObjectsPrepared RequestsPrepared RequestsSSL Cert VerificationSSL Cert VerificationClient Side CertificatesClient Side CertificatesCA CertificatesCA CertificatesBody Content WorkflowBody Content WorkflowKeep-AliveKeep-AliveStreaming UploadsStreaming UploadsChunk-Encoded RequestsChunk-Encoded RequestsPOST Multiple Multipart-Encoded FilesPOST Multiple Multipart-Encoded FilesEvent HooksEvent HooksCustom AuthenticationCustom AuthenticationStreaming RequestsStreaming RequestsProxiesProxiesComplianceComplianceHTTP VerbsHTTP VerbsCustom VerbsCustom VerbsLink HeadersLink HeadersTransport AdaptersTransport AdaptersBlocking Or Non-Blocking?Blocking Or Non-Blocking?Header OrderingHeader OrderingTimeoutsTimeoutsAuthentication
+Basic Authentication
+Digest Authentication
+OAuth 1 Authentication
+OAuth 2 and OpenID Connect Authentication
+Other Authentication
+New Forms of Authentication
+
+Authentication
+Basic Authentication
+Digest Authentication
+OAuth 1 Authentication
+OAuth 2 and OpenID Connect Authentication
+Other Authentication
+New Forms of Authentication
+Basic AuthenticationBasic AuthenticationDigest AuthenticationDigest AuthenticationOAuth 1 AuthenticationOAuth 1 AuthenticationOAuth 2 and OpenID Connect AuthenticationOAuth 2 and OpenID Connect AuthenticationOther AuthenticationOther AuthenticationNew Forms of AuthenticationNew Forms of Authentication¶This part of the documentation, which is mostly prose, details the
+Requests ecosystem and community.
+Recommended Packages and Extensions
+Certifi CA Bundle
+CacheControl
+Requests-Toolbelt
+Requests-Threads
+Requests-OAuthlib
+Betamax
+
+
+Frequently Asked Questions
+Encoded Data?
+Custom User-Agents?
+Why not Httplib2?
+Python 3 Support?
+Python 2 Support?
+What are “hostname doesn’t match” errors?
+
+
+Integrations
+Python for iOS
+
+
+Articles & Talks
+Support
+Stack Overflow
+Send a Tweet
+File an Issue
+E-mail
+IRC
+
+
+Vulnerability Disclosure
+Process
+Previous CVEs
+
+
+Community Updates
+GitHub
+Twitter
+
+
+Release and Version History
+Release History
+dev
+2.23.0 (2020-02-19)
+2.22.0 (2019-05-15)
+2.21.0 (2018-12-10)
+2.20.1 (2018-11-08)
+2.20.0 (2018-10-18)
+2.19.1 (2018-06-14)
+2.19.0 (2018-06-12)
+2.18.4 (2017-08-15)
+2.18.3 (2017-08-02)
+2.18.2 (2017-07-25)
+2.18.1 (2017-06-14)
+2.18.0 (2017-06-14)
+2.17.3 (2017-05-29)
+2.17.2 (2017-05-29)
+2.17.1 (2017-05-29)
+2.17.0 (2017-05-29)
+2.16.5 (2017-05-28)
+2.16.4 (2017-05-27)
+2.16.3 (2017-05-27)
+2.16.2 (2017-05-27)
+2.16.1 (2017-05-27)
+2.16.0 (2017-05-26)
+2.15.1 (2017-05-26)
+2.15.0 (2017-05-26)
+2.14.2 (2017-05-10)
+2.14.1 (2017-05-09)
+2.14.0 (2017-05-09)
+2.13.0 (2017-01-24)
+2.12.5 (2017-01-18)
+2.12.4 (2016-12-14)
+2.12.3 (2016-12-01)
+2.12.2 (2016-11-30)
+2.12.1 (2016-11-16)
+2.12.0 (2016-11-15)
+2.11.1 (2016-08-17)
+2.11.0 (2016-08-08)
+2.10.0 (2016-04-29)
+2.9.2 (2016-04-29)
+2.9.1 (2015-12-21)
+2.9.0 (2015-12-15)
+2.8.1 (2015-10-13)
+2.8.0 (2015-10-05)
+2.7.0 (2015-05-03)
+2.6.2 (2015-04-23)
+2.6.1 (2015-04-22)
+2.6.0 (2015-03-14)
+2.5.3 (2015-02-24)
+2.5.2 (2015-02-23)
+2.5.1 (2014-12-23)
+2.5.0 (2014-12-01)
+2.4.3 (2014-10-06)
+2.4.2 (2014-10-05)
+2.4.1 (2014-09-09)
+2.4.0 (2014-08-29)
+2.3.0 (2014-05-16)
+2.2.1 (2014-01-23)
+2.2.0 (2014-01-09)
+2.1.0 (2013-12-05)
+2.0.1 (2013-10-24)
+2.0.0 (2013-09-24)
+1.2.3 (2013-05-25)
+1.2.2 (2013-05-23)
+1.2.1 (2013-05-20)
+1.2.0 (2013-03-31)
+1.1.0 (2013-01-10)
+1.0.3 (2012-12-18)
+1.0.2 (2012-12-17)
+1.0.1 (2012-12-17)
+1.0.0 (2012-12-17)
+0.14.2 (2012-10-27)
+0.14.1 (2012-10-01)
+0.14.0 (2012-09-02)
+0.13.9 (2012-08-25)
+0.13.8 (2012-08-21)
+0.13.7 (2012-08-19)
+0.13.6 (2012-08-06)
+0.13.5 (2012-07-27)
+0.13.4 (2012-07-27)
+0.13.3 (2012-07-12)
+0.13.2 (2012-06-28)
+0.13.1 (2012-06-07)
+0.13.0 (2012-05-29)
+0.12.1 (2012-05-08)
+0.12.0 (2012-05-02)
+0.11.2 (2012-04-22)
+0.11.1 (2012-03-30)
+0.11.0 (2012-03-14)
+0.10.8 (2012-03-09)
+0.10.7 (2012-03-07)
+0.10.6 (2012-02-25)
+0.10.5 (2012-02-25)
+0.10.4 (2012-02-20)
+0.10.3 (2012-02-20)
+0.10.2 (2012-01-15)
+0.10.1 (2012-01-23)
+0.10.0 (2012-01-21)
+0.9.3 (2012-01-18)
+0.9.2 (2012-01-18)
+0.9.1 (2012-01-06)
+0.9.0 (2011-12-28)
+0.8.9 (2011-12-28)
+0.8.8 (2011-12-28)
+0.8.7 (2011-12-24)
+0.8.6 (2011-12-18)
+0.8.5 (2011-12-14)
+0.8.4 (2011-12-11)
+0.8.3 (2011-11-27)
+0.8.2 (2011-11-19)
+0.8.1 (2011-11-15)
+0.8.0 (2011-11-13)
+0.7.6 (2011-11-07)
+0.7.5 (2011-11-04)
+0.7.4 (2011-10-26)
+0.7.3 (2011-10-23)
+0.7.2 (2011-10-23)
+0.7.1 (2011-10-23)
+0.7.0 (2011-10-22)
+0.6.6 (2011-10-19)
+0.6.5 (2011-10-18)
+0.6.4 (2011-10-13)
+0.6.3 (2011-10-13)
+0.6.2 (2011-10-09)
+0.6.1 (2011-08-20)
+0.6.0 (2011-08-17)
+0.5.1 (2011-07-23)
+0.5.0 (2011-06-21)
+0.4.1 (2011-05-22)
+0.4.0 (2011-05-15)
+0.3.4 (2011-05-14)
+0.3.3 (2011-05-12)
+0.3.2 (2011-04-15)
+0.3.1 (2011-04-01)
+0.3.0 (2011-02-25)
+0.2.4 (2011-02-19)
+0.2.3 (2011-02-15)
+0.2.2 (2011-02-14)
+0.2.1 (2011-02-14)
+0.2.0 (2011-02-14)
+0.0.1 (2011-02-13)
+
+
+Release Process and Rules
+Major Releases
+Minor Releases
+Hotfix Releases
+Reasoning
+
+
+Recommended Packages and Extensions
+Certifi CA Bundle
+CacheControl
+Requests-Toolbelt
+Requests-Threads
+Requests-OAuthlib
+Betamax
+
+Recommended Packages and Extensions
+Certifi CA Bundle
+CacheControl
+Requests-Toolbelt
+Requests-Threads
+Requests-OAuthlib
+Betamax
+Certifi CA BundleCertifi CA BundleCacheControlCacheControlRequests-ToolbeltRequests-ToolbeltRequests-ThreadsRequests-ThreadsRequests-OAuthlibRequests-OAuthlibBetamaxBetamaxFrequently Asked Questions
+Encoded Data?
+Custom User-Agents?
+Why not Httplib2?
+Python 3 Support?
+Python 2 Support?
+What are “hostname doesn’t match” errors?
+
+Frequently Asked Questions
+Encoded Data?
+Custom User-Agents?
+Why not Httplib2?
+Python 3 Support?
+Python 2 Support?
+What are “hostname doesn’t match” errors?
+Encoded Data?Encoded Data?Custom User-Agents?Custom User-Agents?Why not Httplib2?Why not Httplib2?Python 3 Support?Python 3 Support?Python 2 Support?Python 2 Support?What are “hostname doesn’t match” errors?What are “hostname doesn’t match” errors?Integrations
+Python for iOS
+
+Integrations
+Python for iOS
+Python for iOSPython for iOSArticles & TalksArticles & TalksSupport
+Stack Overflow
+Send a Tweet
+File an Issue
+E-mail
+IRC
+
+Support
+Stack Overflow
+Send a Tweet
+File an Issue
+E-mail
+IRC
+Stack OverflowStack OverflowSend a TweetSend a TweetFile an IssueFile an IssueE-mailE-mailIRCIRCVulnerability Disclosure
+Process
+Previous CVEs
+
+Vulnerability Disclosure
+Process
+Previous CVEs
+ProcessProcessPrevious CVEsPrevious CVEsCommunity Updates
+GitHub
+Twitter
+
+Community Updates
+GitHub
+Twitter
+GitHubGitHubTwitterTwitterRelease and Version HistoryRelease and Version HistoryRelease History
+dev
+2.23.0 (2020-02-19)
+2.22.0 (2019-05-15)
+2.21.0 (2018-12-10)
+2.20.1 (2018-11-08)
+2.20.0 (2018-10-18)
+2.19.1 (2018-06-14)
+2.19.0 (2018-06-12)
+2.18.4 (2017-08-15)
+2.18.3 (2017-08-02)
+2.18.2 (2017-07-25)
+2.18.1 (2017-06-14)
+2.18.0 (2017-06-14)
+2.17.3 (2017-05-29)
+2.17.2 (2017-05-29)
+2.17.1 (2017-05-29)
+2.17.0 (2017-05-29)
+2.16.5 (2017-05-28)
+2.16.4 (2017-05-27)
+2.16.3 (2017-05-27)
+2.16.2 (2017-05-27)
+2.16.1 (2017-05-27)
+2.16.0 (2017-05-26)
+2.15.1 (2017-05-26)
+2.15.0 (2017-05-26)
+2.14.2 (2017-05-10)
+2.14.1 (2017-05-09)
+2.14.0 (2017-05-09)
+2.13.0 (2017-01-24)
+2.12.5 (2017-01-18)
+2.12.4 (2016-12-14)
+2.12.3 (2016-12-01)
+2.12.2 (2016-11-30)
+2.12.1 (2016-11-16)
+2.12.0 (2016-11-15)
+2.11.1 (2016-08-17)
+2.11.0 (2016-08-08)
+2.10.0 (2016-04-29)
+2.9.2 (2016-04-29)
+2.9.1 (2015-12-21)
+2.9.0 (2015-12-15)
+2.8.1 (2015-10-13)
+2.8.0 (2015-10-05)
+2.7.0 (2015-05-03)
+2.6.2 (2015-04-23)
+2.6.1 (2015-04-22)
+2.6.0 (2015-03-14)
+2.5.3 (2015-02-24)
+2.5.2 (2015-02-23)
+2.5.1 (2014-12-23)
+2.5.0 (2014-12-01)
+2.4.3 (2014-10-06)
+2.4.2 (2014-10-05)
+2.4.1 (2014-09-09)
+2.4.0 (2014-08-29)
+2.3.0 (2014-05-16)
+2.2.1 (2014-01-23)
+2.2.0 (2014-01-09)
+2.1.0 (2013-12-05)
+2.0.1 (2013-10-24)
+2.0.0 (2013-09-24)
+1.2.3 (2013-05-25)
+1.2.2 (2013-05-23)
+1.2.1 (2013-05-20)
+1.2.0 (2013-03-31)
+1.1.0 (2013-01-10)
+1.0.3 (2012-12-18)
+1.0.2 (2012-12-17)
+1.0.1 (2012-12-17)
+1.0.0 (2012-12-17)
+0.14.2 (2012-10-27)
+0.14.1 (2012-10-01)
+0.14.0 (2012-09-02)
+0.13.9 (2012-08-25)
+0.13.8 (2012-08-21)
+0.13.7 (2012-08-19)
+0.13.6 (2012-08-06)
+0.13.5 (2012-07-27)
+0.13.4 (2012-07-27)
+0.13.3 (2012-07-12)
+0.13.2 (2012-06-28)
+0.13.1 (2012-06-07)
+0.13.0 (2012-05-29)
+0.12.1 (2012-05-08)
+0.12.0 (2012-05-02)
+0.11.2 (2012-04-22)
+0.11.1 (2012-03-30)
+0.11.0 (2012-03-14)
+0.10.8 (2012-03-09)
+0.10.7 (2012-03-07)
+0.10.6 (2012-02-25)
+0.10.5 (2012-02-25)
+0.10.4 (2012-02-20)
+0.10.3 (2012-02-20)
+0.10.2 (2012-01-15)
+0.10.1 (2012-01-23)
+0.10.0 (2012-01-21)
+0.9.3 (2012-01-18)
+0.9.2 (2012-01-18)
+0.9.1 (2012-01-06)
+0.9.0 (2011-12-28)
+0.8.9 (2011-12-28)
+0.8.8 (2011-12-28)
+0.8.7 (2011-12-24)
+0.8.6 (2011-12-18)
+0.8.5 (2011-12-14)
+0.8.4 (2011-12-11)
+0.8.3 (2011-11-27)
+0.8.2 (2011-11-19)
+0.8.1 (2011-11-15)
+0.8.0 (2011-11-13)
+0.7.6 (2011-11-07)
+0.7.5 (2011-11-04)
+0.7.4 (2011-10-26)
+0.7.3 (2011-10-23)
+0.7.2 (2011-10-23)
+0.7.1 (2011-10-23)
+0.7.0 (2011-10-22)
+0.6.6 (2011-10-19)
+0.6.5 (2011-10-18)
+0.6.4 (2011-10-13)
+0.6.3 (2011-10-13)
+0.6.2 (2011-10-09)
+0.6.1 (2011-08-20)
+0.6.0 (2011-08-17)
+0.5.1 (2011-07-23)
+0.5.0 (2011-06-21)
+0.4.1 (2011-05-22)
+0.4.0 (2011-05-15)
+0.3.4 (2011-05-14)
+0.3.3 (2011-05-12)
+0.3.2 (2011-04-15)
+0.3.1 (2011-04-01)
+0.3.0 (2011-02-25)
+0.2.4 (2011-02-19)
+0.2.3 (2011-02-15)
+0.2.2 (2011-02-14)
+0.2.1 (2011-02-14)
+0.2.0 (2011-02-14)
+0.0.1 (2011-02-13)
+
+Release History
+dev
+2.23.0 (2020-02-19)
+2.22.0 (2019-05-15)
+2.21.0 (2018-12-10)
+2.20.1 (2018-11-08)
+2.20.0 (2018-10-18)
+2.19.1 (2018-06-14)
+2.19.0 (2018-06-12)
+2.18.4 (2017-08-15)
+2.18.3 (2017-08-02)
+2.18.2 (2017-07-25)
+2.18.1 (2017-06-14)
+2.18.0 (2017-06-14)
+2.17.3 (2017-05-29)
+2.17.2 (2017-05-29)
+2.17.1 (2017-05-29)
+2.17.0 (2017-05-29)
+2.16.5 (2017-05-28)
+2.16.4 (2017-05-27)
+2.16.3 (2017-05-27)
+2.16.2 (2017-05-27)
+2.16.1 (2017-05-27)
+2.16.0 (2017-05-26)
+2.15.1 (2017-05-26)
+2.15.0 (2017-05-26)
+2.14.2 (2017-05-10)
+2.14.1 (2017-05-09)
+2.14.0 (2017-05-09)
+2.13.0 (2017-01-24)
+2.12.5 (2017-01-18)
+2.12.4 (2016-12-14)
+2.12.3 (2016-12-01)
+2.12.2 (2016-11-30)
+2.12.1 (2016-11-16)
+2.12.0 (2016-11-15)
+2.11.1 (2016-08-17)
+2.11.0 (2016-08-08)
+2.10.0 (2016-04-29)
+2.9.2 (2016-04-29)
+2.9.1 (2015-12-21)
+2.9.0 (2015-12-15)
+2.8.1 (2015-10-13)
+2.8.0 (2015-10-05)
+2.7.0 (2015-05-03)
+2.6.2 (2015-04-23)
+2.6.1 (2015-04-22)
+2.6.0 (2015-03-14)
+2.5.3 (2015-02-24)
+2.5.2 (2015-02-23)
+2.5.1 (2014-12-23)
+2.5.0 (2014-12-01)
+2.4.3 (2014-10-06)
+2.4.2 (2014-10-05)
+2.4.1 (2014-09-09)
+2.4.0 (2014-08-29)
+2.3.0 (2014-05-16)
+2.2.1 (2014-01-23)
+2.2.0 (2014-01-09)
+2.1.0 (2013-12-05)
+2.0.1 (2013-10-24)
+2.0.0 (2013-09-24)
+1.2.3 (2013-05-25)
+1.2.2 (2013-05-23)
+1.2.1 (2013-05-20)
+1.2.0 (2013-03-31)
+1.1.0 (2013-01-10)
+1.0.3 (2012-12-18)
+1.0.2 (2012-12-17)
+1.0.1 (2012-12-17)
+1.0.0 (2012-12-17)
+0.14.2 (2012-10-27)
+0.14.1 (2012-10-01)
+0.14.0 (2012-09-02)
+0.13.9 (2012-08-25)
+0.13.8 (2012-08-21)
+0.13.7 (2012-08-19)
+0.13.6 (2012-08-06)
+0.13.5 (2012-07-27)
+0.13.4 (2012-07-27)
+0.13.3 (2012-07-12)
+0.13.2 (2012-06-28)
+0.13.1 (2012-06-07)
+0.13.0 (2012-05-29)
+0.12.1 (2012-05-08)
+0.12.0 (2012-05-02)
+0.11.2 (2012-04-22)
+0.11.1 (2012-03-30)
+0.11.0 (2012-03-14)
+0.10.8 (2012-03-09)
+0.10.7 (2012-03-07)
+0.10.6 (2012-02-25)
+0.10.5 (2012-02-25)
+0.10.4 (2012-02-20)
+0.10.3 (2012-02-20)
+0.10.2 (2012-01-15)
+0.10.1 (2012-01-23)
+0.10.0 (2012-01-21)
+0.9.3 (2012-01-18)
+0.9.2 (2012-01-18)
+0.9.1 (2012-01-06)
+0.9.0 (2011-12-28)
+0.8.9 (2011-12-28)
+0.8.8 (2011-12-28)
+0.8.7 (2011-12-24)
+0.8.6 (2011-12-18)
+0.8.5 (2011-12-14)
+0.8.4 (2011-12-11)
+0.8.3 (2011-11-27)
+0.8.2 (2011-11-19)
+0.8.1 (2011-11-15)
+0.8.0 (2011-11-13)
+0.7.6 (2011-11-07)
+0.7.5 (2011-11-04)
+0.7.4 (2011-10-26)
+0.7.3 (2011-10-23)
+0.7.2 (2011-10-23)
+0.7.1 (2011-10-23)
+0.7.0 (2011-10-22)
+0.6.6 (2011-10-19)
+0.6.5 (2011-10-18)
+0.6.4 (2011-10-13)
+0.6.3 (2011-10-13)
+0.6.2 (2011-10-09)
+0.6.1 (2011-08-20)
+0.6.0 (2011-08-17)
+0.5.1 (2011-07-23)
+0.5.0 (2011-06-21)
+0.4.1 (2011-05-22)
+0.4.0 (2011-05-15)
+0.3.4 (2011-05-14)
+0.3.3 (2011-05-12)
+0.3.2 (2011-04-15)
+0.3.1 (2011-04-01)
+0.3.0 (2011-02-25)
+0.2.4 (2011-02-19)
+0.2.3 (2011-02-15)
+0.2.2 (2011-02-14)
+0.2.1 (2011-02-14)
+0.2.0 (2011-02-14)
+0.0.1 (2011-02-13)
+devdev2.23.0 (2020-02-19)2.23.0 (2020-02-19)2.22.0 (2019-05-15)2.22.0 (2019-05-15)2.21.0 (2018-12-10)2.21.0 (2018-12-10)2.20.1 (2018-11-08)2.20.1 (2018-11-08)2.20.0 (2018-10-18)2.20.0 (2018-10-18)2.19.1 (2018-06-14)2.19.1 (2018-06-14)2.19.0 (2018-06-12)2.19.0 (2018-06-12)2.18.4 (2017-08-15)2.18.4 (2017-08-15)2.18.3 (2017-08-02)2.18.3 (2017-08-02)2.18.2 (2017-07-25)2.18.2 (2017-07-25)2.18.1 (2017-06-14)2.18.1 (2017-06-14)2.18.0 (2017-06-14)2.18.0 (2017-06-14)2.17.3 (2017-05-29)2.17.3 (2017-05-29)2.17.2 (2017-05-29)2.17.2 (2017-05-29)2.17.1 (2017-05-29)2.17.1 (2017-05-29)2.17.0 (2017-05-29)2.17.0 (2017-05-29)2.16.5 (2017-05-28)2.16.5 (2017-05-28)2.16.4 (2017-05-27)2.16.4 (2017-05-27)2.16.3 (2017-05-27)2.16.3 (2017-05-27)2.16.2 (2017-05-27)2.16.2 (2017-05-27)2.16.1 (2017-05-27)2.16.1 (2017-05-27)2.16.0 (2017-05-26)2.16.0 (2017-05-26)2.15.1 (2017-05-26)2.15.1 (2017-05-26)2.15.0 (2017-05-26)2.15.0 (2017-05-26)2.14.2 (2017-05-10)2.14.2 (2017-05-10)2.14.1 (2017-05-09)2.14.1 (2017-05-09)2.14.0 (2017-05-09)2.14.0 (2017-05-09)2.13.0 (2017-01-24)2.13.0 (2017-01-24)2.12.5 (2017-01-18)2.12.5 (2017-01-18)2.12.4 (2016-12-14)2.12.4 (2016-12-14)2.12.3 (2016-12-01)2.12.3 (2016-12-01)2.12.2 (2016-11-30)2.12.2 (2016-11-30)2.12.1 (2016-11-16)2.12.1 (2016-11-16)2.12.0 (2016-11-15)2.12.0 (2016-11-15)2.11.1 (2016-08-17)2.11.1 (2016-08-17)2.11.0 (2016-08-08)2.11.0 (2016-08-08)2.10.0 (2016-04-29)2.10.0 (2016-04-29)2.9.2 (2016-04-29)2.9.2 (2016-04-29)2.9.1 (2015-12-21)2.9.1 (2015-12-21)2.9.0 (2015-12-15)2.9.0 (2015-12-15)2.8.1 (2015-10-13)2.8.1 (2015-10-13)2.8.0 (2015-10-05)2.8.0 (2015-10-05)2.7.0 (2015-05-03)2.7.0 (2015-05-03)2.6.2 (2015-04-23)2.6.2 (2015-04-23)2.6.1 (2015-04-22)2.6.1 (2015-04-22)2.6.0 (2015-03-14)2.6.0 (2015-03-14)2.5.3 (2015-02-24)2.5.3 (2015-02-24)2.5.2 (2015-02-23)2.5.2 (2015-02-23)2.5.1 (2014-12-23)2.5.1 (2014-12-23)2.5.0 (2014-12-01)2.5.0 (2014-12-01)2.4.3 (2014-10-06)2.4.3 (2014-10-06)2.4.2 (2014-10-05)2.4.2 (2014-10-05)2.4.1 (2014-09-09)2.4.1 (2014-09-09)2.4.0 (2014-08-29)2.4.0 (2014-08-29)2.3.0 (2014-05-16)2.3.0 (2014-05-16)2.2.1 (2014-01-23)2.2.1 (2014-01-23)2.2.0 (2014-01-09)2.2.0 (2014-01-09)2.1.0 (2013-12-05)2.1.0 (2013-12-05)2.0.1 (2013-10-24)2.0.1 (2013-10-24)2.0.0 (2013-09-24)2.0.0 (2013-09-24)1.2.3 (2013-05-25)1.2.3 (2013-05-25)1.2.2 (2013-05-23)1.2.2 (2013-05-23)1.2.1 (2013-05-20)1.2.1 (2013-05-20)1.2.0 (2013-03-31)1.2.0 (2013-03-31)1.1.0 (2013-01-10)1.1.0 (2013-01-10)1.0.3 (2012-12-18)1.0.3 (2012-12-18)1.0.2 (2012-12-17)1.0.2 (2012-12-17)1.0.1 (2012-12-17)1.0.1 (2012-12-17)1.0.0 (2012-12-17)1.0.0 (2012-12-17)0.14.2 (2012-10-27)0.14.2 (2012-10-27)0.14.1 (2012-10-01)0.14.1 (2012-10-01)0.14.0 (2012-09-02)0.14.0 (2012-09-02)0.13.9 (2012-08-25)0.13.9 (2012-08-25)0.13.8 (2012-08-21)0.13.8 (2012-08-21)0.13.7 (2012-08-19)0.13.7 (2012-08-19)0.13.6 (2012-08-06)0.13.6 (2012-08-06)0.13.5 (2012-07-27)0.13.5 (2012-07-27)0.13.4 (2012-07-27)0.13.4 (2012-07-27)0.13.3 (2012-07-12)0.13.3 (2012-07-12)0.13.2 (2012-06-28)0.13.2 (2012-06-28)0.13.1 (2012-06-07)0.13.1 (2012-06-07)0.13.0 (2012-05-29)0.13.0 (2012-05-29)0.12.1 (2012-05-08)0.12.1 (2012-05-08)0.12.0 (2012-05-02)0.12.0 (2012-05-02)0.11.2 (2012-04-22)0.11.2 (2012-04-22)0.11.1 (2012-03-30)0.11.1 (2012-03-30)0.11.0 (2012-03-14)0.11.0 (2012-03-14)0.10.8 (2012-03-09)0.10.8 (2012-03-09)0.10.7 (2012-03-07)0.10.7 (2012-03-07)0.10.6 (2012-02-25)0.10.6 (2012-02-25)0.10.5 (2012-02-25)0.10.5 (2012-02-25)0.10.4 (2012-02-20)0.10.4 (2012-02-20)0.10.3 (2012-02-20)0.10.3 (2012-02-20)0.10.2 (2012-01-15)0.10.2 (2012-01-15)0.10.1 (2012-01-23)0.10.1 (2012-01-23)0.10.0 (2012-01-21)0.10.0 (2012-01-21)0.9.3 (2012-01-18)0.9.3 (2012-01-18)0.9.2 (2012-01-18)0.9.2 (2012-01-18)0.9.1 (2012-01-06)0.9.1 (2012-01-06)0.9.0 (2011-12-28)0.9.0 (2011-12-28)0.8.9 (2011-12-28)0.8.9 (2011-12-28)0.8.8 (2011-12-28)0.8.8 (2011-12-28)0.8.7 (2011-12-24)0.8.7 (2011-12-24)0.8.6 (2011-12-18)0.8.6 (2011-12-18)0.8.5 (2011-12-14)0.8.5 (2011-12-14)0.8.4 (2011-12-11)0.8.4 (2011-12-11)0.8.3 (2011-11-27)0.8.3 (2011-11-27)0.8.2 (2011-11-19)0.8.2 (2011-11-19)0.8.1 (2011-11-15)0.8.1 (2011-11-15)0.8.0 (2011-11-13)0.8.0 (2011-11-13)0.7.6 (2011-11-07)0.7.6 (2011-11-07)0.7.5 (2011-11-04)0.7.5 (2011-11-04)0.7.4 (2011-10-26)0.7.4 (2011-10-26)0.7.3 (2011-10-23)0.7.3 (2011-10-23)0.7.2 (2011-10-23)0.7.2 (2011-10-23)0.7.1 (2011-10-23)0.7.1 (2011-10-23)0.7.0 (2011-10-22)0.7.0 (2011-10-22)0.6.6 (2011-10-19)0.6.6 (2011-10-19)0.6.5 (2011-10-18)0.6.5 (2011-10-18)0.6.4 (2011-10-13)0.6.4 (2011-10-13)0.6.3 (2011-10-13)0.6.3 (2011-10-13)0.6.2 (2011-10-09)0.6.2 (2011-10-09)0.6.1 (2011-08-20)0.6.1 (2011-08-20)0.6.0 (2011-08-17)0.6.0 (2011-08-17)0.5.1 (2011-07-23)0.5.1 (2011-07-23)0.5.0 (2011-06-21)0.5.0 (2011-06-21)0.4.1 (2011-05-22)0.4.1 (2011-05-22)0.4.0 (2011-05-15)0.4.0 (2011-05-15)0.3.4 (2011-05-14)0.3.4 (2011-05-14)0.3.3 (2011-05-12)0.3.3 (2011-05-12)0.3.2 (2011-04-15)0.3.2 (2011-04-15)0.3.1 (2011-04-01)0.3.1 (2011-04-01)0.3.0 (2011-02-25)0.3.0 (2011-02-25)0.2.4 (2011-02-19)0.2.4 (2011-02-19)0.2.3 (2011-02-15)0.2.3 (2011-02-15)0.2.2 (2011-02-14)0.2.2 (2011-02-14)0.2.1 (2011-02-14)0.2.1 (2011-02-14)0.2.0 (2011-02-14)0.2.0 (2011-02-14)0.0.1 (2011-02-13)0.0.1 (2011-02-13)Release Process and Rules
+Major Releases
+Minor Releases
+Hotfix Releases
+Reasoning
+
+Release Process and Rules
+Major Releases
+Minor Releases
+Hotfix Releases
+Reasoning
+Major ReleasesMajor ReleasesMinor ReleasesMinor ReleasesHotfix ReleasesHotfix ReleasesReasoningReasoning¶If you are looking for information on a specific function, class, or method,
+this part of the documentation is for you.
+Developer Interface
+Main Interface
+Exceptions
+Request Sessions
+Lower-Level Classes
+Lower-Lower-Level Classes
+Authentication
+Encodings
+Cookies
+Status Code Lookup
+Migrating to 1.x
+Migrating to 2.x
+
+
+Developer Interface
+Main Interface
+Exceptions
+Request Sessions
+Lower-Level Classes
+Lower-Lower-Level Classes
+Authentication
+Encodings
+Cookies
+Status Code Lookup
+Migrating to 1.x
+Migrating to 2.x
+
+Developer Interface
+Main Interface
+Exceptions
+Request Sessions
+Lower-Level Classes
+Lower-Lower-Level Classes
+Authentication
+Encodings
+Cookies
+Status Code Lookup
+Migrating to 1.x
+Migrating to 2.x
+Main InterfaceMain InterfaceExceptionsExceptionsRequest SessionsRequest SessionsLower-Level ClassesLower-Level ClassesLower-Lower-Level ClassesLower-Lower-Level ClassesAuthenticationAuthenticationEncodingsEncodingsCookiesCookiesStatus Code LookupStatus Code LookupMigrating to 1.xMigrating to 1.xMigrating to 2.xMigrating to 2.x¶If you want to contribute to the project, this part of the documentation is for
+you.
+Contributor’s Guide
+Be Cordial
+Get Early Feedback
+Contribution Suitability
+Code Contributions
+Steps for Submitting Code
+Code Review
+New Contributors
+Kenneth Reitz’s Code Style™
+
+
+Documentation Contributions
+Bug Reports
+Feature Requests
+
+
+Development Philosophy
+Management Style
+Values
+Semantic Versioning
+Standard Library?
+Linux Distro Packages
+
+
+How to Help
+Feature Freeze
+Development Dependencies
+Runtime Environments
+
+
+Authors
+Keepers of the Crystals
+Previous Keepers of Crystals
+Patches and Suggestions
+
+
+Contributor’s Guide
+Be Cordial
+Get Early Feedback
+Contribution Suitability
+Code Contributions
+Steps for Submitting Code
+Code Review
+New Contributors
+Kenneth Reitz’s Code Style™
+
+
+Documentation Contributions
+Bug Reports
+Feature Requests
+
+Contributor’s Guide
+Be Cordial
+Get Early Feedback
+Contribution Suitability
+Code Contributions
+Steps for Submitting Code
+Code Review
+New Contributors
+Kenneth Reitz’s Code Style™
+
+
+Documentation Contributions
+Bug Reports
+Feature Requests
+Be CordialBe CordialGet Early FeedbackGet Early FeedbackContribution SuitabilityContribution SuitabilityCode Contributions
+Steps for Submitting Code
+Code Review
+New Contributors
+Kenneth Reitz’s Code Style™
+
+Code Contributions
+Steps for Submitting Code
+Code Review
+New Contributors
+Kenneth Reitz’s Code Style™
+Steps for Submitting CodeSteps for Submitting CodeCode ReviewCode ReviewNew ContributorsNew ContributorsKenneth Reitz’s Code Style™Kenneth Reitz’s Code Style™Documentation ContributionsDocumentation ContributionsBug ReportsBug ReportsFeature RequestsFeature RequestsDevelopment Philosophy
+Management Style
+Values
+Semantic Versioning
+Standard Library?
+Linux Distro Packages
+
+Development Philosophy
+Management Style
+Values
+Semantic Versioning
+Standard Library?
+Linux Distro Packages
+Management StyleManagement StyleValuesValuesSemantic VersioningSemantic VersioningStandard Library?Standard Library?Linux Distro PackagesLinux Distro PackagesHow to Help
+Feature Freeze
+Development Dependencies
+Runtime Environments
+
+How to Help
+Feature Freeze
+Development Dependencies
+Runtime Environments
+Feature FreezeFeature FreezeDevelopment DependenciesDevelopment DependenciesRuntime EnvironmentsRuntime EnvironmentsAuthors
+Keepers of the Crystals
+Previous Keepers of Crystals
+Patches and Suggestions
+
+Authors
+Keepers of the Crystals
+Previous Keepers of Crystals
+Patches and Suggestions
+Keepers of the CrystalsKeepers of the CrystalsPrevious Keepers of CrystalsPrevious Keepers of CrystalsPatches and SuggestionsPatches and SuggestionsThere are no more guides. You are now guideless.
+Good luck.
+
+
+
+
+
+
+
+
+  Requests is an elegant and simple HTTP library for Python, built for
+  human beings.
+Sponsored by CERT Gouvernemental - GOVCERT.LU.CERT Gouvernemental - GOVCERT.LUReceive updates on new releases and upcoming projects.
+Recommended Packages and Extensions
+
+
+Requests @ GitHub
+Requests @ PyPI
+Issue Tracker
+Release History
+Recommended Packages and Extensions
+Recommended Packages and ExtensionsRequests @ GitHubRequests @ GitHubRequests @ PyPIRequests @ PyPIIssue TrackerIssue TrackerRelease HistoryRelease History
+English
+French
+German
+Japanese
+Chinese
+Portuguese
+Italian
+Spanish
+EnglishEnglishFrenchFrenchGermanGermanJapaneseJapaneseChineseChinesePortuguesePortugueseItalianItalianSpanishSpanishKenneth Reitz
+
